@@ -1,0 +1,9 @@
+# Core runtime
+torch>=2.2
+transformers>=4.44
+# Schema validation for the benchmark (baseline schema-valid check)
+jsonschema>=4.0
+# Testing
+pytest>=8.0
+# Optional, for CSV convenience in the harness (falls back to stdlib csv if absent)
+pandas>=2.0
