@@ -1,0 +1,14 @@
+(* A nested tool-call DSL. An argument may itself be a call, so calls nest to
+   any depth, e.g.  add(mul(2, 3), neg(-4), "label")  — this is genuinely
+   recursive (context-free), which the pushdown stack handles and a flat DFA
+   cannot. The first rule, `call`, is the start symbol. *)
+
+call    = name "(" args ")" ;
+args    = [ value { "," ws value } ] ;
+value   = call | number | string | boolean ;
+ws      = { " " } ;
+
+name    = /[a-z_][a-z0-9_]*/ ;
+number  = /-?[0-9]+(\.[0-9]+)?/ ;
+string  = /"[^"]*"/ ;
+boolean = "true" | "false" ;
