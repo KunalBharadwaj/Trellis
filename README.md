@@ -199,3 +199,7 @@ It needs the logits at every step, which means a local model or a server you
 control — a hosted chat API won't do, since it only hands back finished text.
 Outlines, guidance, and XGrammar are the references for the production-grade
 version of these ideas.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
