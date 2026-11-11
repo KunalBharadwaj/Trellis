@@ -1,0 +1,7 @@
+task,naive_ms_per_step,indexed_ms_per_step,speedup_x,n_states,precompute_ms
+flat_object,64.7,0.001,82847.0,41,2570.0
+enum_field,39.2,0.001,68848.0,57,2443.0
+array_of_strings,86.6,0.001,101796.0,42,3462.0
+optional_field,94.8,0.001,130165.0,53,4249.0
+nested_object,65.3,0.001,89540.0,84,5034.0
+array_of_objects,61.1,0.001,80275.0,97,6744.0
